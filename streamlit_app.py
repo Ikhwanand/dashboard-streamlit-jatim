@@ -53,7 +53,7 @@ cola4.metric("Max", f"{round(penyakit_hipertensi_max):,}")
 
 
 # Row B
-st.markdown('## Penyakit Diabetes Mellitius')
+st.markdown('## Penyakit Diabetes Melitus')
 st.markdown('##')
 st.subheader('Total penyakit Diabetes Melitus dari 2018 - 2022')
 colb1, colb2, colb3, colb4 = st.columns(4)
