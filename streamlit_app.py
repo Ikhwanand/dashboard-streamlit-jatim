@@ -10,7 +10,7 @@ st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title('Dashboard Penyakit Hipertensi dan Diabetes Mellitius pada Provinsi JATIM 2018-2022')
+st.title('Dashboard Penyakit Hipertensi dan Diabetes Melitus pada Provinsi Jawa Timur 2018-2022')
 
 st.sidebar.header('Dashboard')
 
@@ -42,7 +42,8 @@ penyakit_diabetes_max = data['jumlah_penyakit_diabetes_mellitius'].max()
 
 # Row A
 st.markdown('## Penyakit Hipertensi')
-st.subheader('Total Penyakit Hipertensi Dari Tahun Ke Tahun')
+st.markdown('##')
+st.subheader('Total penyakit Hipertensi dari 2018 - 2022')
 cola1, cola2, cola3, cola4 = st.columns(4)
 
 cola1.metric("Sum", f"{round(penyakit_hipertensi_sum):,}")
@@ -53,7 +54,8 @@ cola4.metric("Max", f"{round(penyakit_hipertensi_max):,}")
 
 # Row B
 st.markdown('## Penyakit Diabetes Mellitius')
-st.subheader('Total Penyakit Diabetes Mellitius Dari Tahun Ke Tahun')
+st.markdown('##')
+st.subheader('Total penyakit Diabetes Melitus dari 2018 - 2022')
 colb1, colb2, colb3, colb4 = st.columns(4)
 
 colb1.metric("Sum", f"{round(penyakit_diabetes_sum):,}")
