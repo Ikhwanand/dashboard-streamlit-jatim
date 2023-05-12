@@ -46,10 +46,10 @@ st.markdown('##')
 st.subheader('Total penyakit Hipertensi dari 2018 - 2022')
 cola1, cola2, cola3, cola4 = st.columns(4)
 
-cola1.metric("Sum", f"{round(penyakit_hipertensi_sum):,}")
-cola2.metric("Mean", f"{round(penyakit_hipertensi_mean):,}")
-cola3.metric("Min", f"{round(penyakit_hipertensi_min):,}")
-cola4.metric("Max", f"{round(penyakit_hipertensi_max):,}")
+cola1.metric("Total", f"{round(penyakit_hipertensi_sum):,}")
+cola2.metric("Rata-rata", f"{round(penyakit_hipertensi_mean):,}")
+cola3.metric("Minimal", f"{round(penyakit_hipertensi_min):,}")
+cola4.metric("Maksimal", f"{round(penyakit_hipertensi_max):,}")
 
 
 # Row B
@@ -58,10 +58,10 @@ st.markdown('##')
 st.subheader('Total penyakit Diabetes Melitus dari 2018 - 2022')
 colb1, colb2, colb3, colb4 = st.columns(4)
 
-colb1.metric("Sum", f"{round(penyakit_diabetes_sum):,}")
-colb2.metric("Mean", f"{round(penyakit_diabetes_mean):,}")
-colb3.metric("Min", f"{round(penyakit_diabetes_min):,}")
-colb4.metric("Max", f"{round(penyakit_diabetes_max):,}")
+colb1.metric("Total", f"{round(penyakit_diabetes_sum):,}")
+colb2.metric("Rata-rata", f"{round(penyakit_diabetes_mean):,}")
+colb3.metric("Minimal", f"{round(penyakit_diabetes_min):,}")
+colb4.metric("Maksimal", f"{round(penyakit_diabetes_max):,}")
 
 c1, c2 = st.columns((7,3))
 if year_data == 'Tahun 2018':
