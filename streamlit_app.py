@@ -10,7 +10,7 @@ st.set_page_config(layout='wide', initial_sidebar_state='expanded')
 with open('style.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-st.title('Dashboard Penyakit Hipertensi dan Diabetes Mellitius pada Propinsi JATIM 2018-2022')
+st.title('Dashboard Penyakit Hipertensi dan Diabetes Mellitius pada Provinsi JATIM 2018-2022')
 
 st.sidebar.header('Dashboard')
 
