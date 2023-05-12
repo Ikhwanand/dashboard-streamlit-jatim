@@ -17,7 +17,7 @@ st.sidebar.header('Dashboard')
 st.sidebar.subheader('Timer Data Parameter')
 year_data = st.sidebar.selectbox('Select year data', ('Tahun 2018', 'Tahun 2019', 'Tahun 2020', 'Tahun 2021', 'Tahun 2022'))
 
-st.sidebar.subheader('Bar chart parameter')
+st.sidebar.subheader('Bar Chart Parameter')
 data_theta = st.sidebar.selectbox('Select data', ('jumlah_penyakit_hipertensi', 'jumlah_penyakit_diabetes_mellitius'))
 
 st.sidebar.markdown(''' 
