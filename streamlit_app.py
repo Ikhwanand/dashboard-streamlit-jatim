@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd  
 import numpy as np  
 import plost 
-
+from numerize import numerize
 
 # Page setting
 st.set_page_config(layout='wide', initial_sidebar_state='expanded')
@@ -45,10 +45,10 @@ st.markdown('## Penyakit Hipertensi')
 st.write('Total penyakit Hipertensi dari 2018 - 2022')
 cola1, cola2, cola3, cola4 = st.columns(4)
 
-cola1.metric("Total", f"{round(penyakit_hipertensi_sum):,}")
-cola2.metric("Rata-rata", f"{round(penyakit_hipertensi_mean):,}")
-cola3.metric("Minimal", f"{round(penyakit_hipertensi_min):,}")
-cola4.metric("Maksimal", f"{round(penyakit_hipertensi_max):,}")
+cola1.metric("Total", f"{numerize.numerize(penyakit_hipertensi_sum)}")
+cola2.metric("Rata-rata", f"{numerize.numerize(penyakit_hipertensi_mean)}")
+cola3.metric("Minimal", f"{numerize.numerize(penyakit_hipertensi_min)}")
+cola4.metric("Maksimal", f"{numerize.numerize(penyakit_hipertensi_max)}")
 
 
 # Row B
@@ -56,10 +56,10 @@ st.markdown('## Penyakit Diabetes Melitus')
 st.write('Total penyakit Diabetes Melitus dari 2018 - 2022')
 colb1, colb2, colb3, colb4 = st.columns(4)
 
-colb1.metric("Total", f"{round(penyakit_diabetes_sum):,}")
-colb2.metric("Rata-rata", f"{round(penyakit_diabetes_mean):,}")
-colb3.metric("Minimal", f"{round(penyakit_diabetes_min):,}")
-colb4.metric("Maksimal", f"{round(penyakit_diabetes_max):,}")
+colb1.metric("Total", f"{numerize.numerize(penyakit_diabetes_sum)}")
+colb2.metric("Rata-rata", f"{numerize.numerize(penyakit_diabetes_mean)}")
+colb3.metric("Minimal", f"{numerize.numerize(penyakit_diabetes_min)}")
+colb4.metric("Maksimal", f"{numerize.numerize(penyakit_diabetes_max)}")
 
 c1, c2 = st.columns((7,3))
 if year_data == 'Tahun 2018':
