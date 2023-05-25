@@ -21,7 +21,7 @@ st.sidebar.subheader('Bar Chart Parameter')
 data_theta = st.sidebar.selectbox('Select data', ('jumlah_penyakit_hipertensi', 'jumlah_penyakit_diabetes_mellitius'))
 
 st.sidebar.markdown(''' 
-                    Created with ❤️ by Ikhwananda copyright Data Professor
+                    Created with ❤️ by Ikhwananda
                     ''')
 
 # Data 
