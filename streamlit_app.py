@@ -27,17 +27,17 @@ st.sidebar.markdown('''
 # Data 
 data = pd.read_csv('Jumlah Penyakit Tidak Menular Clean.csv')
 
-penyakit_hipertensi_sum = data['jumlah_penyakit_hipertensi'].sum()
-penyakit_diabetes_sum = data['jumlah_penyakit_diabetes_mellitius'].sum()
+penyakit_hipertensi_sum = data[data['periode_update']==year_data]['jumlah_penyakit_hipertensi'].sum()
+penyakit_diabetes_sum = data[data['periode_update']==year_data]['jumlah_penyakit_diabetes_mellitius'].sum()
 
-penyakit_hipertensi_mean = data['jumlah_penyakit_hipertensi'].mean()
-penyakit_diabetes_mean = data['jumlah_penyakit_diabetes_mellitius'].mean()
+penyakit_hipertensi_mean = data[data['periode_update']==year_data]['jumlah_penyakit_hipertensi'].mean()
+penyakit_diabetes_mean = data[data['periode_update']==year_data]['jumlah_penyakit_diabetes_mellitius'].mean()
 
-penyakit_hipertensi_min = data['jumlah_penyakit_hipertensi'].min()  
-penyakit_diabetes_min = data['jumlah_penyakit_diabetes_mellitius'].min() 
+penyakit_hipertensi_min = data[data['periode_update']==year_data]['jumlah_penyakit_hipertensi'].min()  
+penyakit_diabetes_min = data[data['periode_update']==year_data]['jumlah_penyakit_diabetes_mellitius'].min() 
 
-penyakit_hipertensi_max = data['jumlah_penyakit_hipertensi'].max()
-penyakit_diabetes_max = data['jumlah_penyakit_diabetes_mellitius'].max()
+penyakit_hipertensi_max = data[data['periode_update']==year_data]['jumlah_penyakit_hipertensi'].max()
+penyakit_diabetes_max = data[data['periode_update']==year_data]['jumlah_penyakit_diabetes_mellitius'].max()
 
 
 # Row A
